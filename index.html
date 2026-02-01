@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <style>
+      input[type="radio"], input[type="checkbox"]{
+        vertical-align: top;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 id="title">High School Feedback Form</h1>
+    <p id="description">Please let us know what we can do to improve our school</p>
+
+    <form id="survey-form">
+
+      <label for="name" id="name-label">Name: </label>
+      <input type="text" id="name" placeholder="John Doe" required/>
+      <br>
+      <label for="email" id="email-label">Email: </label>
+      <input type="email" id="email" placeholder="example@email.com" required/>
+      <br>
+      <label for="number" id="number-label">Grade: </label>
+      <input type="number" id="number" min="9" max="12" placeholder="9-12" style="width: 50px;">
+
+      <p>Rate our school on a scale of 1 to 10</p>
+      <input type="range" min="1" max="5" />
+
+      <p>What's your favorite subject over your time in high school?</p>
+      <select id="dropdown">
+        <option value="" selected disabled>Select an option</option>
+        <option value="math">Math</option>
+        <option value="science">Science</option>
+        <option value="history">History</option>
+        <option value="english">English</option>
+        <option value="foreign-language">Foreign Language</option>
+        <option value="other">Other</option>
+      </select>
+
+      <p>What's your least favorite subject over your time in high school?</p>
+      <select>
+        <option value="" selected disabled>Select an option</option>
+        <option value="math">Math</option>
+        <option value="science">Science</option>
+        <option value="history">History</option>
+        <option value="english">English</option>
+        <option value="foreign-language">Foreign Language</option>
+        <option value="other">Other</option>
+      </select>
+
+      <p>Which year did you have your best experience?</p>
+      <input type="radio" name="best-year" value="freshman" id="freshman" checked />
+      <label for="freshman">Freshman</label>
+      <input type="radio" name="best-year" value="sophomore" id="sophomore"  />
+      <label for="sophomore">Sophomore</label>
+      <input type="radio" name="best-year" value="junior" id="junior" />
+      <label for="junior">Junior</label>
+      <input type="radio" name="best-year" value="senior" id="senior" />
+      <label for="senior">Senior</label>
+
+      <p>What can we improve on?</p>
+      <label>
+      <input type="checkbox" value="facilities" name="improvements" />
+      Facilities
+      </label>
+      <label>
+      <input type="checkbox" value="teachers" name="improvements" />
+      Teachers
+      </label>
+      <label>
+      <input type="checkbox" value="classes" name="improvements" />
+      Classes
+      </label>
+      <label>
+      <input type="checkbox" value="extracurriculars" name="improvements" />
+      Extracurricular Activities
+      </label>
+      <label>
+      <input type="checkbox" value="design" name="improvements" />
+      Design
+      </label>
+      <label>
+      <input type="checkbox" value="events" name="improvements" />
+      Events
+      </label>
+
+      <p>Any comments or suggestions?</p>
+      <textarea id="comments" placeholder="Enter comments or suggestions here"></textarea>
+
+      <p>Thank you for completing this survey! We appreciate the feedback.</p>
+      <button id="submit">Submit</button>
+
+    </form>
+  </body>
+</html>
