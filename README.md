@@ -6,4 +6,8 @@ This project was built as part of the freeCodeCamp HTML certification.
 - Semantic HTML
 - Accessibility best practices
 
+## Author
 
+Created by: **Shijie Dong**
+
+Year/Month:: **2026 February**
