@@ -10,4 +10,4 @@ This project was built as part of the freeCodeCamp HTML certification.
 
 Created by: **Shijie Dong**
 
-Year/Month:: **2026 February**
+Year/Month: **2026 February**
